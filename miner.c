@@ -10352,7 +10352,8 @@ static void gen_stratum_work(struct pool *pool, struct work *work)
 	       &pool->nonce2,
 #endif
 	       pool->nonce2sz);
-	pool->nonce2++;
+	//pool->nonce2++;
+	pool->nonce2= ((u_int64_t)random())*((u_int64_t)random());
 	
 	work->pool = pool;
 	work->work_restart_id = pool->swork.work_restart_id;

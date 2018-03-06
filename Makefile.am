@@ -130,6 +130,9 @@ bfgminer_LDFLAGS  += $(libevent_LDFLAGS)
 bfgminer_CPPFLAGS += $(libevent_CFLAGS)
 endif
 
+if USE_BOO
+bfgminer_SOURCES += driver-boo.h driver-boo.c
+endif
 
 if USE_OPENCL
 bfgminer_SOURCES += driver-opencl.h driver-opencl.c

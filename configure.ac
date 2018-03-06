@@ -579,6 +579,8 @@ BFG_DRIVER(bitmain,Bitmain Antminer S* series,SHA256d,no,[
 	has_asic=yes
 ])
 
+BFG_DRIVER(,Boo,SHA256d,no)
+
 BFG_DRIVER(,Icarus,SHA256d,auto,[
 	need_dynclock=yes
 	need_lowl_vcom=yes
